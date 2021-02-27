@@ -1,0 +1,236 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[res,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.4in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{.8in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Vishal Mittal} \\ \vspace{1pt}
+    \small +91-6378775444 $|$ \href{mailto:f20170080@pilani.bits-pilani.ac.in}{\underline{f20170080@pilani.bits-pilani.ac.in}} $|$ 
+    \href{https://linkedin.com/in/vismit2000}{\underline{linkedin.com/in/vismit2000}} $|$
+    \href{https://github.com/vismit2000}{\underline{github.com/vismit2000}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {BITS Pilani}{Rajasthan, India}
+      {B.E.(Hons.) Computer Science, GPA: 3.68 (9.20/10)}{Aug 2017 -- May 2021}
+    \resumeSubheading
+      {Kendriya Vidyalaya No.1, Harni Road, Vadodara}{Gujarat, India}
+      {Intermediate, 94.6\%}{April 2016 -- May 2017}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Intern, Member of Technical Staff}{Jan 2021 -- Present}
+      {Nutanix}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Working in Platform Solutions team at Nutanix}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Summer Analyst}{May 2020 -- June 2020}
+      {Goldman Sachs}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Worked in ML and Analytics team under Engineering Division}
+        \resumeItem{Built a model to predict real-time anomaly in time-series data leveraging deep learning techniques like LSTM}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Research Intern}{May 2019 -- July 2019}
+      {Indian Institute of Remote Sensing (IIRS, ISRO)}{Uttrakhand, India}
+      \resumeItemListStart
+        \resumeItem{Developed a \href{https://github.com/vismit2000/IIRS_Internship}{\underline{web platform}} to identify potential suitable habitat for swamp deer in Jhilmil Jheel region near Haridwar (Uttarakhand)}
+        \resumeItem{The platform also had a feature of reclassifying images on the fly on the basis of suitability}
+        \resumeItem{Tech used: PostgreSQL database to store satellite imagery data, HTML/CSS, JS, Python, Django}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C/C++, Java, Python, HTML/CSS, SQL, JavaScript} \\
+     \textbf{Developer Tools}{: Git, Docker}
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Storage System - Cloud Computing} $|$ \emph{Python, Flask, Zookeeper, CRUSH} $|$ \href{https://github.com/vismit2000/ShoppingCart-Cloud}{\underline{Github}}}{Nov 2020}
+          \resumeItemListStart
+            \resumeItem{A storage system for Shopping Cart data, and an API to access it written in Python}
+            \resumeItem{Implemented Leaderless replication, data partitioning and eventual consistency}
+            \resumeItem{Used CRUSH hash function for mapping, Zookeeper for coordination, read-repair using version vectors for consistency and Flask to build the API}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Real Time Identity Detection System - Deep Learning} $|$ \emph{OpenCV, Python} $|$ \href{https://github.com/vismit2000/face-recognition-attendance-system}{\underline{Github}}}{Jan 2020 - May 2020}
+          \resumeItemListStart
+            \resumeItem{Devised a college-wide CCTV camera-based real-time surveillance system for 5000+ students in BITS Pilani campus}
+            \resumeItem{Used Python's face\_recognition library integrated with Flask to create an attendance system that allows users to register themselves with their own images and consequently mark their attendance by simply facing the camera}
+            \resumeItem{Calculated unknown face encoding by training a modified VGG-16 ConvNet on a triplet loss function. Only one training image per class is required}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Compiler Construction} $|$ \emph{C} $|$ \href{https://github.com/vismit2000/Compiler-Construction}{\underline{Github}}}{Jan 2020 -- Apr 2020}
+          \resumeItemListStart
+            \resumeItem{Implemented a compiler for a custom language in C}
+            \resumeItem{Implemented lexical Analyzer, Syntax Analyzer, Semantic Analyzer, and Code generator modules}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Question Answering System - Natural Language Processing} $|$ \href{https://github.com/vismit2000/Ranking-Based-Question-Answering-System}{\underline{Github}}}{Aug 2019 -- Dec 2019}
+          \resumeItemListStart
+            \resumeItem{A Study Oriented Project for Ranking-Based Question Answering System}
+            \resumeItem{Developed a Chrome Extension which consists of a question interface where the user can ask any question}
+            \resumeItem{Created a Question Selection Web Service using Flask to handle the backend and used SVM model for question classification}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------AWARDS AND RECOGNITIONS-----------
+\section{Awards and Recognitions}
+ \resumeSubHeadingListStart
+
+    \resumeSubSubheading
+      {Techgig Code Gladiators 2020}{Aug 2020}
+      \resumeItemListStart
+        \resumeItem{Reached the Grand Finale (top 800 participants) of Techgig Code Gladiators 2020 among more than 2.5 lakh participants}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Google Tech Intern Connect - 2019}{June 2019}
+      \resumeItemListStart
+        \resumeItem{Selected as one of 400 participants nationwide for Google Tech Intern Connect - 2019 Event held at Google India Head Office, Gurugram}
+      \resumeItemListEnd
+    
+    \resumeSubSubheading
+      {KVPY Scholar}{Dec 2016}
+      \resumeItemListStart
+        \resumeItem{Attended National Science Camp (Vijyoshi) - 2016 held at IISER Kolkata for KVPY scholars}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%-----------SCHOLARSHIP-----------
+\section{Scholarship}
+    \resumeItemListStart
+    \resumeItem{Received BITS Pilani Merit Scholarship throughout my degree programme awarded to top 2\% of the students}
+    \resumeItemListEnd
+%-------------------------------------------
+\end{document}
