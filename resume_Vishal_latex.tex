@@ -1,0 +1,188 @@
+% \documentclass[]{Resume}
+\documentclass[a4paper]{Resume}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+% \usepackage{fontawesome5}
+\usepackage{fontawesome}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\topmargin}{-.4in}
+\addtolength{\textheight}{0.6in}
+
+\hypersetup{%
+ 	colorlinks=false,% hyperlinks will be black
+ 	pdfborderstyle={/S/U/W 0.25}% border style will be underline of width 0.25pt
+}
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TITLE NAME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Vishal Mittal}{
+\vspace{4pt}
+    % xxx-xxx-xxxx -> Phone Number
+	\normalfont {\faPhone } +91-6378775444 \hfill  {\faAt } \href{mailto:vismit2000@gmail.com}{vismit2000@gmail.com} \hfill {\faLinkedinSquare } \href{https://www.linkedin.com/in/vismit2000}{vismit2000} \hfill {\faGithub } \href{https://github.com/vismit2000}{vismit2000} 
+}
+
+\descript{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+\hrulefill
+
+\subsection{Birla Institute of Technology and Science (BITS Pilani) \hfill \normalfont Pilani, Rajasthan}
+\position{Bachelor of Engineering (Hons.) Computer Science (CGPA: 9.30/10)}{June '17 - May '21}
+\sectionsep
+
+% \pt \textbf{Electives:} Artificial Intelligence, Machine Learning, Information Retrieval, Data Mining, Number Theory, Cryptography \\
+% \pt \textbf{Teaching Experience:} Data Mining, Object-oriented Programming
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Experience} 
+\hrulefill 
+
+\subsection{Goldman Sachs \hfill \normalfont Bengaluru, India}
+\position{Tech Associate}{July '21 - Present}
+
+\textit{Alert Management CoPilot}
+
+\pt Building a \textbf{CoPilot} for alert management and clustering using LLMs for production support \\
+\pt Improving the software developer efficiency for low-code tools for automated alert resolution \\
+
+\sectionsep{}
+
+% \sectionsep
+
+\textit{Upstream Delay Analysis}
+
+\pt Built a tool to identify upstream jobs (amongst \textbf{100s of thousands}) responsible for delay of business-critical milestone \\
+\pt Root-cause analysis of delay in a distributed job scheduler with \textbf{20 million+} jobs \\
+\pt Reduced the time and manual effort spent (\textbf{from days to seconds} in diagnostics and resolution for root-cause analysis \\
+\pt Awarded Goldman Sachs Engineering Tenet Award (H1-2023) in \textbf{Lead with Data} category \\
+
+\sectionsep{}
+
+\textit{ML-based Anomaly Detection and Forecasting}
+
+\pt Designed ML models in the domain of real-time anomaly detection using statistical thresholds and time-series forecasting \\
+\pt Automatic flagging and root causing of critical deliverables using time-series forecasting and xgboost \\
+
+\sectionsep
+
+\subsection{Nutanix \hfill \normalfont Bengaluru, India}
+\position{Intern, Member of Technical Staff}{Jan '21 - Jun '21}
+\pt Developed a database of server nodes and their command outputs to enhance developer productivity. \\
+\pt Mocked hardware output on various commands eliminating the need for procuring expensive hardware for testing \\
+\pt Automated the comparison and analysis of hardware data collected by different tools in the hardware abstraction library \\
+
+\sectionsep
+
+\subsection{Goldman Sachs \hfill \normalfont Bengaluru, India}
+\position{Summer Analyst}{May '20 - Jul '20} 
+\pt Built a model to predict real-time anomaly in time-series data to predict database unavailability ahead of time using LSTM \\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects}
+\hrulefill
+
+\position{Chapter-level summaries of bestselling books using LLMs $|$ \href{https://github.com/cosmic-glitch/book-summarizer}{\underline{GitHub} $|$ \href{https://news.ycombinator.com/item?id=40016316}{\underline{HackerNews}}}}{Apr '24 - Jul '24}
+\pt Collaborated on a project to automate the generation of summaries for \textbf{150+} books available in PDF and EPUB formats. \\
+\pt \textbf{Automatic Text Extraction}: Extract text using \textbf{PDFMiner} for PDF files and \textbf{BeautifulSoup} for EPUB files \\
+\pt Divided the content into manageable sections or chapters, and used LLMs via an API to generate both detailed and concise summaries \\
+
+\sectionsep{}
+
+\position{Compiler Construction $|$ \emph{C} $|$ \href{https://github.com/vismit2000/Compiler-Construction}{\underline{GitHub}}} {Jan '20 - Apr '20}
+\pt Implemented a compiler for a custom language in C \\
+\pt Implemented lexical analyzer, syntax analyzer, semantic analyzer, and Code generator modules \\
+
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HACKATHONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hackathons}
+\hrulefill
+
+\position{Winner - Goldman Sachs Global Engineering Hackathon - Earn Money category}{May '24}
+\pt Collaborated with a \textbf{11-member} cross-divisional team to develop a optimal \textbf{portfolio recommendation tool} \\
+\pt Suggested investment allocation by identifying similarities across macroeconomic scenarios \\
+\pt Automated the process of news analysis and summarization using LLMs \\
+\pt Optimized parallel processing using \textbf{MapReduce} to create weekly and monthly summaries emphasizing significant economic trends and development \\
+
+\sectionsep{}
+
+\position{Runners up - Goldman Sachs Intern Coding Contest}{July '20}
+
+\sectionsep
+
+\vspace{-6pt}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Skills} 
+\hrulefill
+
+\pt \textbf{Programming:} Python, C/C++, SQL, Java \\
+\pt \textbf{DevOps:} AWS, Terraform, Docker, Git, Gitlab CI/CD, Hadoop
+
+\sectionsep
+\vspace{-6pt}
+
+  
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Publication}
+\hrulefill
+
+\pt Kumar N., \textbf{Mittal V}., Sharma Y. (2021) \textit{"A Three-Fold Machine Learning Approach for Detection of COVID-19 from Audio Data"}. ICCSA 2021. Lecture Notes in Computer Science, vol 12951. Springer, Cham. \href{https://doi.org/10.1007/978-3-030-86970-0_35}{\underline{Paper Link}} \\
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LEADERSHIP AND HONORS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Leadership and Honors} 
+\hrulefill 
+
+\begin{minipage}[t]{.8\textwidth}
+	\pt Mentored \textbf{5} women students from low-income communities who are pursuing undergraduate degrees across India by providing them virtual mentorship through Goldman Sachs Catalyst program
+\end{minipage}%
+\begin{minipage}[t]{.2\textwidth}
+	\hfill May '24 - Dec '24
+\end{minipage}
+
+\begin{minipage}[t]{.8\textwidth}
+	\pt Served on the \textbf{judging panel} for BITS Pilani campus hiring, representing Goldman Sachs
+\end{minipage}%
+\begin{minipage}[t]{.2\textwidth}
+	\hfill Sept '24
+\end{minipage}
+
+
+\begin{minipage}[t]{.8\textwidth}
+	\pt Awarded \textbf{Merit Scholarship} (\textbf{Top 2\%} out of \textbf{1000} students) at BITS Pilani
+\end{minipage}%
+\begin{minipage}[t]{.2\textwidth}
+	\hfill Jun '17 - May '21
+\end{minipage}
+
+%\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+\end{document}  \documentclass[]{article}
